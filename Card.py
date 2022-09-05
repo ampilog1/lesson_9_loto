@@ -49,6 +49,12 @@ class Card:
             item = CardNumber(item)
         return item in self.numbers
 
+    def is_empty(self):
+        for item in self.numbers:
+            if not item.is_cross_out:
+                return False
+        return True
+
     def cross_out(self, number):
         if isinstance(number, int)
             number = CardNumber(number)
