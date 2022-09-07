@@ -1,6 +1,6 @@
-from models.bag import Bag
-from models.card import Card
-from models.player import create_player
+from Вag import Bag
+from Card import Card
+from player import create_player
 
 
 def is_continue_game(players):
